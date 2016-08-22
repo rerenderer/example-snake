@@ -64,7 +64,7 @@
   (let [intersections (get-snake-intersections snake)
         without-ignored (remove (set ignore-intersections) intersections)]
     (assoc state
-      :ignore-intersctions intersections
+      :ignore-intersections intersections
       :lives (if (empty? without-ignored) lives (dec lives)))))
 
 (defn check-lives
@@ -120,14 +120,15 @@
          {:status :in-progress}]
         (swap! state-atom change-direction code)
 
-        [[:keyup {:keycode 32}]
-         _]
+        [[:keyup {:keycode 32}] _]
         (swap! state-atom change-game-state)
 
         [[:timer :move-snake]
          {:status :in-progress}]
         (swap! state-atom move-snake)
 
-        [event state]
-        (println "Not handled:" event "for state:" state))
+        [event {:debug true :as state}]
+        (println "Not handled:" event "for state:" state)
+
+        [_ _] :pass)
       (recur))))
