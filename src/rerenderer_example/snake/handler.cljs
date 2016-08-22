@@ -18,14 +18,19 @@
 
 (defn resume-game
   [state]
-  state)
+  (assoc state :status :in-progress))
 
-(defn on-button-click
+(defn pause-game
+  [state]
+  (assoc state :status :pause))
+
+(defn change-game-state
   [state]
   (condp = (:status state)
     :start-menu (start-game state)
     :game-over (start-game state)
-    :pause (resume-game state)))
+    :pause (resume-game state)
+    :in-progress (pause-game state)))
 
 (defn create-timer!
   [name time]
@@ -109,15 +114,15 @@
         [[:click {:x (x :guard #(> 700 % 100))
                   :y (y :guard #(> 500 % 400))}]
          {:status (_ :guard #(not= % :in-progress))}]
-        (swap! state-atom on-button-click)
+        (swap! state-atom change-game-state)
 
         [[:keyup {:keycode (code :guard #(>= 40 % 37))}]
          {:status :in-progress}]
         (swap! state-atom change-direction code)
 
         [[:keyup {:keycode 32}]
-         {:status (_ :guard #(not= % :in-progress))}]
-        (swap! state-atom on-button-click)
+         _]
+        (swap! state-atom change-game-state)
 
         [[:timer :move-snake]
          {:status :in-progress}]
