@@ -98,7 +98,7 @@
 (defn translate [pos] (* pos 20))
 
 (defn field
-  [candys snake]
+  [candy snake]
   (p/rectangle {:width 800
                 :height 550
                 :x 0
@@ -110,25 +110,24 @@
                     :width 18
                     :height 18
                     :color (:game-item colors)}))
-    (for [[x y] candys]
-      (p/text {:x (translate x)
-               :y (- (translate y) 5)
-               :width 30
-               :height 30
-               :font-size 20
-               :value "🍎"
-               :color (:game-item colors)}))))
+    (p/text {:x (-> candy first translate)
+             :y (-> candy second translate (- 5))
+             :width 30
+             :height 30
+             :font-size 20
+             :value "🍎"
+             :color (:game-item colors)})))
 
 (defn game-scene
-  [score lives candys snake]
+  [score lives candy snake]
   (background
     (panel score lives)
-    (field candys snake)))
+    (field candy snake)))
 
 (defn root-view
-  [{:keys [status score lives candys snake]}]
+  [{:keys [status score lives candy snake]}]
   (condp = status
     :start-menu (start-menu)
     :game-over (game-over score)
-    :in-progress (game-scene score lives candys snake)
+    :in-progress (game-scene score lives candy snake)
     :pause (pause score)))

@@ -10,7 +10,7 @@
   [state]
   (assoc state
     :status :in-progress
-    :candys [[2 5]]
+    :candy [2 5]
     :snake [[6 6] [6 7] [6 8]]
     :direction :right
     :ignore-intersections []
@@ -47,10 +47,6 @@
         ny (if (< ny 0) 27 ny)]
     (conj (vec snake) [nx ny])))
 
-(defn on-candy?
-  [snake candys]
-  (intersection (set snake) (set candys)))
-
 (defn get-snake-intersections
   [snake]
   (->> snake
@@ -73,18 +69,17 @@
     state))
 
 (defn check-move-on-candy
-  [{:keys [snake direction candys score] :as state}]
-  (let [on-candys (on-candy? snake candys)
+  [{:keys [snake direction candy score] :as state}]
+  (let [on-candy (some #{candy} snake)
         snake (get-snake snake direction)]
-    (if (empty? on-candys)
+    (if (nil? on-candy)
       (assoc state
         :snake (rest snake)
         :score (inc score))
       (assoc state
         :score (+ 10 score)
         :snake snake
-        :candys (conj (remove on-candys candys)
-                      [(rand-int 40) (rand-int 27)])))))
+        :candy [(rand-int 40) (rand-int 27)]))))
 
 (defn move-snake
   [state]
