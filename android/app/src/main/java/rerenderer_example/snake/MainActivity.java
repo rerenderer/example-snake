@@ -5,6 +5,6 @@ import org.rerenderer.android.RerendererActivity;
 public class MainActivity extends RerendererActivity {
     @Override
     public String getUrl() {
-        return "file:///android_asset/index.html";
+        return "http://192.168.1.4:3449";
     }
 }

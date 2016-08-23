@@ -108,11 +108,11 @@
 
 (defn event-handler
   [event-ch state-atom _]
-  (let [move-snake-ch (create-timer! :move-snake 200)]
+  (let [move-snake-ch (create-timer! :move-snake 100)]
     (go-loop []
       (match [(-> [event-ch move-snake-ch] alts! first) @state-atom]
-        [[:click {:x (x :guard #(> 700 % 100))
-                  :y (y :guard #(> 500 % 400))}]
+        [[:click {:x (_ :guard #(> 700 % 100))
+                  :y (_ :guard #(> 500 % 400))}]
          {:status (_ :guard #(not= % :in-progress))}]
         (swap! state-atom change-game-state)
 
