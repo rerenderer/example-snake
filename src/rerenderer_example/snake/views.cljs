@@ -81,7 +81,7 @@
             :y y
             :sx 0
             :sy 0
-            :src "/sprite.png"}))
+            :src "sprite.png"}))
 
 (defn panel
   [score lives]
@@ -118,7 +118,7 @@
             :y y
             :sx 40
             :sy 0
-            :src "/sprite.png"}))
+            :src "sprite.png"}))
 
 (defn snake-part
   [{:keys [x y]}]
@@ -128,7 +128,7 @@
             :y y
             :sx 70
             :sy 0
-            :src "/sprite.png"}))
+            :src "sprite.png"}))
 
 (defn field
   [candy snake]
