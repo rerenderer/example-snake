@@ -46,8 +46,8 @@
                   :right [(inc x) y]
                   :up [x (dec y)]
                   :down [x (inc y)])
-        nx (if (> nx 40) 0 nx)
-        nx (if (< nx 0) 40 nx)
+        nx (if (> nx 39) 0 nx)
+        nx (if (< nx 0) 39 nx)
         ny (if (> ny 27) 0 ny)
         ny (if (< ny 0) 27 ny)]
     (conj (vec snake) [nx ny])))
@@ -84,7 +84,7 @@
       (assoc state
         :score (+ 10 score)
         :snake snake
-        :candy [(rand-int 40) (rand-int 27)]))))
+        :candy [(rand-int 39) (rand-int 27)]))))
 
 (defn move-snake
   [state]
