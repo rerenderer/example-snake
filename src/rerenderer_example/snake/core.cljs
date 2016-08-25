@@ -24,7 +24,8 @@
                      :event-handler #'event-handler
                      :state initial-state
                      :stats stats
-                     :is-debug? is-debug?))
+                     :is-debug? is-debug?
+                     :preload-images ["sprite.png"]))
 
 (defn on-reload [] (debug/rerender! game))
 

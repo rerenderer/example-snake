@@ -7,7 +7,7 @@
                  [org.clojure/clojurescript "1.7.228"]
                  [org.clojure/core.match "0.3.0-alpha4"]
                  [org.clojure/core.async "0.2.371"]
-                 [org.rerenderer/rerenderer "0.4.3"]
+                 [org.rerenderer/rerenderer "0.4.4"]
                  [cljsjs/stats "16.0-0"]
                  [binaryage/devtools "0.8.1"]]
   :plugins [[lein-cljsbuild "1.1.2"]
