@@ -73,6 +73,16 @@
              :value (str "SCORE: " score)})
     (button {:text "Touch or press space to continue"})))
 
+(defn live
+  [{:keys [x y]}]
+  (p/image {:width 36
+            :height 32
+            :x x
+            :y y
+            :sx 0
+            :sy 0
+            :src "/sprite.png"}))
+
 (defn panel
   [score lives]
   (p/rectangle {:width 800
@@ -87,15 +97,38 @@
              :x 10
              :y 8
              :value (str "SCORE: " score)})
-    (p/text {:width 300
+    (p/text {:width 100
              :height 50
              :color (:text colors)
              :font-size 24
-             :x 600
+             :x 530
              :y 8
-             :value (apply str "LIVES: " (repeat lives "❤"))})))
+             :value "LIVES:"})
+    (for [n (range lives)]
+      (live {:x (+ 610 (* n 36))
+             :y 8}))))
 
 (defn translate [pos] (* pos 20))
+
+(defn bread
+  [{:keys [x y]}]
+  (p/image {:width 20
+            :height 20
+            :x x
+            :y y
+            :sx 40
+            :sy 0
+            :src "/sprite.png"}))
+
+(defn snake-part
+  [{:keys [x y]}]
+  (p/image {:width 20
+            :height 20
+            :x x
+            :y y
+            :sx 70
+            :sy 0
+            :src "/sprite.png"}))
 
 (defn field
   [candy snake]
@@ -105,18 +138,10 @@
                 :y 50
                 :color (:background colors)}
     (for [[x y] snake]
-      (p/rectangle {:x (inc (translate x))
-                    :y (inc (translate y))
-                    :width 18
-                    :height 18
-                    :color (:game-item colors)}))
-    (p/text {:x (-> candy first translate)
-             :y (-> candy second translate (- 5))
-             :width 30
-             :height 30
-             :font-size 20
-             :value "🍎"
-             :color (:game-item colors)})))
+      (snake-part {:x (translate x)
+                   :y (translate y)}))
+    (bread {:x (-> candy first translate)
+            :y (-> candy second translate)})))
 
 (defn game-scene
   [score lives candy snake]
