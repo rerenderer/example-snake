@@ -9,12 +9,12 @@ goog.require('cljs.core');
 rerenderer.debug.rerender_BANG_ = (function rerenderer$debug$rerender_BANG_(game){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq(["Rerender game manually!"], 0));
 
-var map__22481 = game;
-var map__22481__$1 = ((((!((map__22481 == null)))?((((map__22481.cljs$lang$protocol_mask$partition0$ & (64))) || (map__22481.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__22481):map__22481);
-var render_state_BANG_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__22481__$1,cljs.core.cst$kw$render_DASH_state_BANG_);
-var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__22481__$1,cljs.core.cst$kw$state_DASH_atom);
-var G__22483 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(state_atom) : cljs.core.deref.call(null,state_atom));
-return (render_state_BANG_.cljs$core$IFn$_invoke$arity$1 ? render_state_BANG_.cljs$core$IFn$_invoke$arity$1(G__22483) : render_state_BANG_.call(null,G__22483));
+var map__19107 = game;
+var map__19107__$1 = ((((!((map__19107 == null)))?((((map__19107.cljs$lang$protocol_mask$partition0$ & (64))) || (map__19107.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__19107):map__19107);
+var render_state_BANG_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__19107__$1,cljs.core.cst$kw$render_DASH_state_BANG_);
+var state_atom = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__19107__$1,cljs.core.cst$kw$state_DASH_atom);
+var G__19109 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(state_atom) : cljs.core.deref.call(null,state_atom));
+return (render_state_BANG_.cljs$core$IFn$_invoke$arity$1 ? render_state_BANG_.cljs$core$IFn$_invoke$arity$1(G__19109) : render_state_BANG_.call(null,G__19109));
 });
 /**
  * Swaps game state, works like atom's `swap!`.
@@ -24,14 +24,14 @@ return (render_state_BANG_.cljs$core$IFn$_invoke$arity$1 ? render_state_BANG_.cl
  */
 rerenderer.debug.swap_state_BANG_ = (function rerenderer$debug$swap_state_BANG_(var_args){
 var args__7221__auto__ = [];
-var len__7214__auto___22486 = arguments.length;
-var i__7215__auto___22487 = (0);
+var len__7214__auto___19112 = arguments.length;
+var i__7215__auto___19113 = (0);
 while(true){
-if((i__7215__auto___22487 < len__7214__auto___22486)){
-args__7221__auto__.push((arguments[i__7215__auto___22487]));
+if((i__7215__auto___19113 < len__7214__auto___19112)){
+args__7221__auto__.push((arguments[i__7215__auto___19113]));
 
-var G__22488 = (i__7215__auto___22487 + (1));
-i__7215__auto___22487 = G__22488;
+var G__19114 = (i__7215__auto___19113 + (1));
+i__7215__auto___19113 = G__19114;
 continue;
 } else {
 }
@@ -48,10 +48,10 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.swap_BANG_,cljs.c
 
 rerenderer.debug.swap_state_BANG_.cljs$lang$maxFixedArity = (1);
 
-rerenderer.debug.swap_state_BANG_.cljs$lang$applyTo = (function (seq22484){
-var G__22485 = cljs.core.first(seq22484);
-var seq22484__$1 = cljs.core.next(seq22484);
-return rerenderer.debug.swap_state_BANG_.cljs$core$IFn$_invoke$arity$variadic(G__22485,seq22484__$1);
+rerenderer.debug.swap_state_BANG_.cljs$lang$applyTo = (function (seq19110){
+var G__19111 = cljs.core.first(seq19110);
+var seq19110__$1 = cljs.core.next(seq19110);
+return rerenderer.debug.swap_state_BANG_.cljs$core$IFn$_invoke$arity$variadic(G__19111,seq19110__$1);
 });
 /**
  * Resets game state, works like atom's `reset!`.
@@ -60,9 +60,9 @@ return rerenderer.debug.swap_state_BANG_.cljs$core$IFn$_invoke$arity$variadic(G_
  *   * `value` - new value.
  */
 rerenderer.debug.reset_state_BANG_ = (function rerenderer$debug$reset_state_BANG_(game,value){
-var G__22491 = cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game);
-var G__22492 = value;
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__22491,G__22492) : cljs.core.reset_BANG_.call(null,G__22491,G__22492));
+var G__19117 = cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game);
+var G__19118 = value;
+return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__19117,G__19118) : cljs.core.reset_BANG_.call(null,G__19117,G__19118));
 });
 /**
  * Resets game state to initial value.
@@ -70,15 +70,15 @@ return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BA
  *   * `game` - `Game` record.
  */
 rerenderer.debug.reset_state_to_initial_BANG_ = (function rerenderer$debug$reset_state_to_initial_BANG_(game){
-var G__22495 = cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game);
-var G__22496 = cljs.core.cst$kw$initial_DASH_state.cljs$core$IFn$_invoke$arity$1(game);
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__22495,G__22496) : cljs.core.reset_BANG_.call(null,G__22495,G__22496));
+var G__19121 = cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game);
+var G__19122 = cljs.core.cst$kw$initial_DASH_state.cljs$core$IFn$_invoke$arity$1(game);
+return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__19121,G__19122) : cljs.core.reset_BANG_.call(null,G__19121,G__19122));
 });
 /**
  * Add listener to state changes.
  */
 rerenderer.debug.watch_state_BANG_ = (function rerenderer$debug$watch_state_BANG_(game,listener){
-return cljs.core.add_watch(cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game),cljs.core.cst$kw$debug,(function (p1__22498_SHARP_,p2__22499_SHARP_,p3__22500_SHARP_,p4__22497_SHARP_){
-return (listener.cljs$core$IFn$_invoke$arity$1 ? listener.cljs$core$IFn$_invoke$arity$1(p4__22497_SHARP_) : listener.call(null,p4__22497_SHARP_));
+return cljs.core.add_watch(cljs.core.cst$kw$state_DASH_atom.cljs$core$IFn$_invoke$arity$1(game),cljs.core.cst$kw$debug,(function (p1__19124_SHARP_,p2__19125_SHARP_,p3__19126_SHARP_,p4__19123_SHARP_){
+return (listener.cljs$core$IFn$_invoke$arity$1 ? listener.cljs$core$IFn$_invoke$arity$1(p4__19123_SHARP_) : listener.call(null,p4__19123_SHARP_));
 }));
 });

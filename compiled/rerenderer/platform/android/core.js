@@ -39,25 +39,25 @@ throw cljs.core.missing_protocol("IAndroid.android-primitive",this$);
 });
 
 rerenderer.platform.android.core.serialize_component = (function rerenderer$platform$android$core$serialize_component(component){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [rerenderer.platform.android.core.android_primitive(component),rerenderer.component.props(component),(function (){var iter__6928__auto__ = (function rerenderer$platform$android$core$serialize_component_$_iter__12535(s__12536){
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [rerenderer.platform.android.core.android_primitive(component),rerenderer.component.props(component),(function (){var iter__6928__auto__ = (function rerenderer$platform$android$core$serialize_component_$_iter__19421(s__19422){
 return (new cljs.core.LazySeq(null,(function (){
-var s__12536__$1 = s__12536;
+var s__19422__$1 = s__19422;
 while(true){
-var temp__4657__auto__ = cljs.core.seq(s__12536__$1);
+var temp__4657__auto__ = cljs.core.seq(s__19422__$1);
 if(temp__4657__auto__){
-var s__12536__$2 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__12536__$2)){
-var c__6926__auto__ = cljs.core.chunk_first(s__12536__$2);
+var s__19422__$2 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__19422__$2)){
+var c__6926__auto__ = cljs.core.chunk_first(s__19422__$2);
 var size__6927__auto__ = cljs.core.count(c__6926__auto__);
-var b__12538 = cljs.core.chunk_buffer(size__6927__auto__);
-if((function (){var i__12537 = (0);
+var b__19424 = cljs.core.chunk_buffer(size__6927__auto__);
+if((function (){var i__19423 = (0);
 while(true){
-if((i__12537 < size__6927__auto__)){
-var child = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__6926__auto__,i__12537);
-cljs.core.chunk_append(b__12538,rerenderer$platform$android$core$serialize_component(child));
+if((i__19423 < size__6927__auto__)){
+var child = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__6926__auto__,i__19423);
+cljs.core.chunk_append(b__19424,rerenderer$platform$android$core$serialize_component(child));
 
-var G__12541 = (i__12537 + (1));
-i__12537 = G__12541;
+var G__19427 = (i__19423 + (1));
+i__19423 = G__19427;
 continue;
 } else {
 return true;
@@ -65,13 +65,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__12538),rerenderer$platform$android$core$serialize_component_$_iter__12535(cljs.core.chunk_rest(s__12536__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__19424),rerenderer$platform$android$core$serialize_component_$_iter__19421(cljs.core.chunk_rest(s__19422__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__12538),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__19424),null);
 }
 } else {
-var child = cljs.core.first(s__12536__$2);
-return cljs.core.cons(rerenderer$platform$android$core$serialize_component(child),rerenderer$platform$android$core$serialize_component_$_iter__12535(cljs.core.rest(s__12536__$2)));
+var child = cljs.core.first(s__19422__$2);
+return cljs.core.cons(rerenderer$platform$android$core$serialize_component(child),rerenderer$platform$android$core$serialize_component_$_iter__19421(cljs.core.rest(s__19422__$2)));
 }
 } else {
 return null;

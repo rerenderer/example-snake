@@ -34,8 +34,8 @@ return rerenderer.debug.rerender_BANG_(rerenderer_example.snake.core.game);
 if(cljs.core.truth_(rerenderer_example.snake.core.is_debug_QMARK_)){
 devtools.core.install_BANG_.cljs$core$IFn$_invoke$arity$0();
 
-rerenderer.debug.watch_state_BANG_(rerenderer_example.snake.core.game,(function (p1__21688_SHARP_){
-return console.log(p1__21688_SHARP_);
+rerenderer.debug.watch_state_BANG_(rerenderer_example.snake.core.game,(function (p1__21748_SHARP_){
+return console.log(p1__21748_SHARP_);
 }));
 } else {
 }
