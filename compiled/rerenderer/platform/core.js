@@ -14,17 +14,17 @@ if(typeof rerenderer.platform.core.listen_BANG_ !== 'undefined'){
  *  - [:keydown {:keycode}]
  *  - [:keyup {:keycode}]
  */
-rerenderer.platform.core.listen_BANG_ = (function (){var method_table__7069__auto__ = (function (){var G__19260 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19260) : cljs.core.atom.call(null,G__19260));
+rerenderer.platform.core.listen_BANG_ = (function (){var method_table__7069__auto__ = (function (){var G__14638 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14638) : cljs.core.atom.call(null,G__14638));
 })();
-var prefer_table__7070__auto__ = (function (){var G__19261 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19261) : cljs.core.atom.call(null,G__19261));
+var prefer_table__7070__auto__ = (function (){var G__14639 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14639) : cljs.core.atom.call(null,G__14639));
 })();
-var method_cache__7071__auto__ = (function (){var G__19262 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19262) : cljs.core.atom.call(null,G__19262));
+var method_cache__7071__auto__ = (function (){var G__14640 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14640) : cljs.core.atom.call(null,G__14640));
 })();
-var cached_hierarchy__7072__auto__ = (function (){var G__19263 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19263) : cljs.core.atom.call(null,G__19263));
+var cached_hierarchy__7072__auto__ = (function (){var G__14641 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14641) : cljs.core.atom.call(null,G__14641));
 })();
 var hierarchy__7073__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,cljs.core.get_global_hierarchy());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("rerenderer.platform.core","listen!"),rerenderer.platform.core.get_platform,cljs.core.cst$kw$default,hierarchy__7073__auto__,method_table__7069__auto__,prefer_table__7070__auto__,method_cache__7071__auto__,cached_hierarchy__7072__auto__));
@@ -37,17 +37,17 @@ if(typeof rerenderer.platform.core.render !== 'undefined'){
  * 
  *   (component options) -> result-canvas
  */
-rerenderer.platform.core.render = (function (){var method_table__7069__auto__ = (function (){var G__19264 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19264) : cljs.core.atom.call(null,G__19264));
+rerenderer.platform.core.render = (function (){var method_table__7069__auto__ = (function (){var G__14642 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14642) : cljs.core.atom.call(null,G__14642));
 })();
-var prefer_table__7070__auto__ = (function (){var G__19265 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19265) : cljs.core.atom.call(null,G__19265));
+var prefer_table__7070__auto__ = (function (){var G__14643 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14643) : cljs.core.atom.call(null,G__14643));
 })();
-var method_cache__7071__auto__ = (function (){var G__19266 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19266) : cljs.core.atom.call(null,G__19266));
+var method_cache__7071__auto__ = (function (){var G__14644 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14644) : cljs.core.atom.call(null,G__14644));
 })();
-var cached_hierarchy__7072__auto__ = (function (){var G__19267 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19267) : cljs.core.atom.call(null,G__19267));
+var cached_hierarchy__7072__auto__ = (function (){var G__14645 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14645) : cljs.core.atom.call(null,G__14645));
 })();
 var hierarchy__7073__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,cljs.core.get_global_hierarchy());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("rerenderer.platform.core","render"),rerenderer.platform.core.get_platform,cljs.core.cst$kw$default,hierarchy__7073__auto__,method_table__7069__auto__,prefer_table__7070__auto__,method_cache__7071__auto__,cached_hierarchy__7072__auto__));
@@ -61,17 +61,17 @@ if(typeof rerenderer.platform.core.information !== 'undefined'){
  * :height int-px
  * :input #{:mouse :keyboard :touch}}
  */
-rerenderer.platform.core.information = (function (){var method_table__7069__auto__ = (function (){var G__19268 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19268) : cljs.core.atom.call(null,G__19268));
+rerenderer.platform.core.information = (function (){var method_table__7069__auto__ = (function (){var G__14646 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14646) : cljs.core.atom.call(null,G__14646));
 })();
-var prefer_table__7070__auto__ = (function (){var G__19269 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19269) : cljs.core.atom.call(null,G__19269));
+var prefer_table__7070__auto__ = (function (){var G__14647 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14647) : cljs.core.atom.call(null,G__14647));
 })();
-var method_cache__7071__auto__ = (function (){var G__19270 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19270) : cljs.core.atom.call(null,G__19270));
+var method_cache__7071__auto__ = (function (){var G__14648 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14648) : cljs.core.atom.call(null,G__14648));
 })();
-var cached_hierarchy__7072__auto__ = (function (){var G__19271 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__19271) : cljs.core.atom.call(null,G__19271));
+var cached_hierarchy__7072__auto__ = (function (){var G__14649 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__14649) : cljs.core.atom.call(null,G__14649));
 })();
 var hierarchy__7073__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,cljs.core.get_global_hierarchy());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("rerenderer.platform.core","information"),rerenderer.platform.core.get_platform,cljs.core.cst$kw$default,hierarchy__7073__auto__,method_table__7069__auto__,prefer_table__7070__auto__,method_cache__7071__auto__,cached_hierarchy__7072__auto__));

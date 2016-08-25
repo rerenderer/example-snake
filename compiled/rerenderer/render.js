@@ -8,9 +8,9 @@ goog.require('rerenderer.component');
  * Returns channel that waits for states.
  */
 rerenderer.render.render_BANG_ = (function rerenderer$render$render_BANG_(root,state,options){
-try{var G__19559 = (root.cljs$core$IFn$_invoke$arity$1 ? root.cljs$core$IFn$_invoke$arity$1(state) : root.call(null,state));
-var G__19560 = options;
-return (rerenderer.platform.core.render.cljs$core$IFn$_invoke$arity$2 ? rerenderer.platform.core.render.cljs$core$IFn$_invoke$arity$2(G__19559,G__19560) : rerenderer.platform.core.render.call(null,G__19559,G__19560));
-}catch (e19558){var e = e19558;
+try{var G__21553 = (root.cljs$core$IFn$_invoke$arity$1 ? root.cljs$core$IFn$_invoke$arity$1(state) : root.call(null,state));
+var G__21554 = options;
+return (rerenderer.platform.core.render.cljs$core$IFn$_invoke$arity$2 ? rerenderer.platform.core.render.cljs$core$IFn$_invoke$arity$2(G__21553,G__21554) : rerenderer.platform.core.render.call(null,G__21553,G__21554));
+}catch (e21552){var e = e21552;
 return console.error("Rendering failed",e);
 }});
