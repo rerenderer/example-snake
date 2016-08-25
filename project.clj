@@ -21,4 +21,11 @@
                                          :source-map true
                                          :main "rerenderer-example.snake.core"
                                          :optimizations :none
-                                         :pretty-print false}}}})
+                                         :pretty-print false}}
+                       :production {:source-paths ["src"]
+                                    :compiler {:output-to "build/compiled/main.js"
+                                               :output-dir "build/compiled"
+                                               :asset-path "./compiled"
+                                               :main "rerenderer-example.snake.core"
+                                               :optimizations :advanced
+                                               :pretty-print false}}}})
